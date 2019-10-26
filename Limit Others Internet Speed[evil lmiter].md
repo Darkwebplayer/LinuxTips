@@ -14,15 +14,20 @@ Repo Link :https://github.com/bitbrute/evillimiter
     sudo python3 setup.py install
   
 ### How to use?
+
+
   * open terminal and enter _evillimiter_
   * ? to display help
   * scan for devices  
-    scan
+
+        scan
     
   * Now enter hosts to view connected devices
-    hosts
   
-  * Now Select the host or hosts you wanna limit using their number and enter following command  
-      limit id1,id2 100kbit or 1mbit or limit all 100kbit
-      eg: limit 1,2,3 100kbit
-## thats it
+        hosts
+  
+  * Now Select the host or hosts you wanna limit using their number and enter following command   
+          
+          limit id1,id2 100kbit or 1mbit or limit all 100kbit  
+            eg: limit 1,2,3 100kbit  
+## Thats it !
