@@ -16,7 +16,7 @@ Repo Link :https://github.com/bitbrute/evillimiter
 ### How to use?
 
 
-  * open terminal and enter _evillimiter_
+  * open terminal and enter _sudo evillimiter_
   * ? to display help
   * scan for devices  
 
