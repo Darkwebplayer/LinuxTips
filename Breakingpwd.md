@@ -29,7 +29,7 @@ From here on there are two ways
 
 - open terminal in live os
 
--`sudo su` to become root
+- `sudo su` to become root
 
 - fdisk -l to view file system and file the linux drive which password you dont know
 
