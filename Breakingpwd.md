@@ -1,6 +1,6 @@
 # Breaking linux root password
 
-# Normal Way
+## Normal Way
 
 - restart the system
 
@@ -12,7 +12,7 @@ From here on there are two ways
 
 2. edit grub and enter bash
 
-## 2ndway
+### 2ndway
 
 - press `e` on grub screen
 
@@ -20,7 +20,29 @@ From here on there are two ways
 
 -now you will be in root
 
-# Redhat Linux
+- `mount -n -o remount,rw /`
+- change password using `passwd` 
+- `exec /sbin/init` 
+- now your password will be resetted
+
+## Using live cd
+
+- open terminal in live os
+
+-`sudo su` to become root
+
+- fdisk -l to view file system and file the linux drive which password you dont know
+
+- `mkdir  /mnt/recover` and `mount  /dev/sda1<you partition name>  /mnt/recover` 
+
+- `chroot  /mnt/recover` we are pretending to be on the regular Linux filesystem. This is simply known as chrooting.
+
+- now change the password using `passwd` and unmount the partion
+
+- voila your password has been changed
+
+
+## Redhat Linux
 
 - go to the grub screen and press `e` as we did erlier and find the like begins with `Linux` this time add `rd.break` at the end of the line and then `console=tty1`.
 
