@@ -18,7 +18,7 @@ From here on there are two ways
 
 - You need to modify it or change it from “_read-only_” mode to “_read-write_” mode. Find the line beginning with `“Linux.”` After, look for `“ro,”` and change it `“rw.”` Add `init=/bin/bash` at the end of the line.
 
--now you will be in root
+- now you will be in root
 
 - `mount -n -o remount,rw /`
 - change password using `passwd` 
